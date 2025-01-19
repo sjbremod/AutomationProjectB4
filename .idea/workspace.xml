@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="903e6055-7fd8-461d-828f-a415aee7c162" name="Changes" comment="first selenium test1">
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day3/T2_getText_getAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day3/T3_getAttribute_css.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day4/T000_xpath_getText.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day4/T00_css_isDisplayed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day4/T0_forget_password.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/utilities/GeneralConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/utilities/LoopCampConstants.java" afterDir="false" />
+    <list default="true" id="903e6055-7fd8-461d-828f-a415aee7c162" name="Changes" comment="day 4 merge">
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day4/T1_findElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day5/T000_staleElementException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day5/T00_checkbox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day5/T0_radioButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day5/T1_testNG_intro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day5/T2_testNG_with_Selenium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day5/T3_simple_dropdown.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/loop/test/utilities/DocuportConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/utilities/DocuportConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="seleniumRound2" />
+        <entry key="$PROJECT_DIR$" value="day_4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,116 +57,166 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AllLocatorsPractice.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ChromeOptionsExample.executor&quot;: &quot;Run&quot;,
-    &quot;Application.GoogleSearch.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Locators.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NavigateToAmazon.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SeleniumTest.executor&quot;: &quot;Run&quot;,
-    &quot;Application.T000_xpath_getText.executor&quot;: &quot;Run&quot;,
-    &quot;Application.T00_css_isDisplayed.executor&quot;: &quot;Run&quot;,
-    &quot;Application.T0_forget_password.executor&quot;: &quot;Run&quot;,
-    &quot;Application.T1_locators_getText.executor&quot;: &quot;Run&quot;,
-    &quot;Application.T2_getText_getAttribute.executor&quot;: &quot;Run&quot;,
-    &quot;Application.T3_getAttribute_css.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;day__4&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/udasc/IdeaProjects/AutomationProjectB4&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/udasc/IdeaProjects/AutomationProjectB4/src/main/java/io/loop/test/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AllLocatorsPractice.executor": "Run",
+    "Application.ChromeOptionsExample.executor": "Run",
+    "Application.GoogleSearch.executor": "Run",
+    "Application.Locators.executor": "Run",
+    "Application.NavigateToAmazon.executor": "Run",
+    "Application.SeleniumTest.executor": "Run",
+    "Application.T000_staleElementException.executor": "Run",
+    "Application.T000_xpath_getText.executor": "Run",
+    "Application.T00_checkbox.executor": "Run",
+    "Application.T00_css_isDisplayed.executor": "Run",
+    "Application.T0_forget_password.executor": "Run",
+    "Application.T0_radioButton.executor": "Run",
+    "Application.T1_findElements.executor": "Run",
+    "Application.T1_locators_getText.executor": "Run",
+    "Application.T2_getText_getAttribute.executor": "Run",
+    "Application.T3_getAttribute_css.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.T1_testNG_intro.atest2.executor": "Run",
+    "TestNG.T1_testNG_intro.executor": "Run",
+    "TestNG.T1_testNG_intro.test1.executor": "Run",
+    "TestNG.T1_testNG_intro.test2.executor": "Run",
+    "TestNG.T2_testNG_with_Selenium.executor": "Run",
+    "TestNG.T3_simple_dropdown.executor": "Run",
+    "git-widget-placeholder": "day__5",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/udasc/IdeaProjects/AutomationProjectB4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/udasc/IdeaProjects/AutomationProjectB4/src/main/java/io/loop/test/Main.java",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="io.loop.test.utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.T1_locators_getText">
-    <configuration name="Locators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.loop.test.day3.Locators" />
+  <component name="RunManager" selected="TestNG.T3_simple_dropdown">
+    <configuration name="T1_testNG_intro" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProjectB4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.loop.test.day3.*" />
+          <option name="PATTERN" value="io.loop.test.day5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="io.loop.test.day5" />
+      <option name="MAIN_CLASS_NAME" value="io.loop.test.day5.T1_testNG_intro" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T000_xpath_getText" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.loop.test.day4.T000_xpath_getText" />
+    <configuration name="T1_testNG_intro.test1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProjectB4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.loop.test.day4.*" />
+          <option name="PATTERN" value="io.loop.test.day5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="io.loop.test.day5" />
+      <option name="MAIN_CLASS_NAME" value="io.loop.test.day5.T1_testNG_intro" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T00_css_isDisplayed" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.loop.test.day4.T00_css_isDisplayed" />
+    <configuration name="T1_testNG_intro.test2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProjectB4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.loop.test.day4.*" />
+          <option name="PATTERN" value="io.loop.test.day5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="io.loop.test.day5" />
+      <option name="MAIN_CLASS_NAME" value="io.loop.test.day5.T1_testNG_intro" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T1_locators_getText" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.loop.test.day3.T1_locators_getText" />
+    <configuration name="T1_testNG_intro.test2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProjectB4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.loop.test.day3.*" />
+          <option name="PATTERN" value="io.loop.test.day5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="io.loop.test.day5" />
+      <option name="MAIN_CLASS_NAME" value="io.loop.test.day5.T1_testNG_intro" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T3_getAttribute_css" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.loop.test.day3.T3_getAttribute_css" />
+    <configuration name="T2_testNG_with_Selenium" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProjectB4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.loop.test.day3.*" />
+          <option name="PATTERN" value="io.loop.test.day5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="io.loop.test.day5" />
+      <option name="MAIN_CLASS_NAME" value="io.loop.test.day5.T2_testNG_with_Selenium" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="T3_simple_dropdown" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProjectB4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.loop.test.day5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.loop.test.day5" />
+      <option name="MAIN_CLASS_NAME" value="io.loop.test.day5.T3_simple_dropdown" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.T1_locators_getText" />
-        <item itemvalue="Application.T3_getAttribute_css" />
-        <item itemvalue="Application.T00_css_isDisplayed" />
-        <item itemvalue="Application.T000_xpath_getText" />
-        <item itemvalue="Application.Locators" />
+        <item itemvalue="TestNG.T3_simple_dropdown" />
+        <item itemvalue="TestNG.T2_testNG_with_Selenium" />
+        <item itemvalue="TestNG.T1_testNG_intro" />
+        <item itemvalue="TestNG.T1_testNG_intro.test2" />
+        <item itemvalue="TestNG.T1_testNG_intro.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -196,6 +246,7 @@
       <workItem from="1736812104149" duration="101000" />
       <workItem from="1736897684204" duration="12728000" />
       <workItem from="1737204814741" duration="1429000" />
+      <workItem from="1737297003257" duration="17347000" />
     </task>
     <task id="LOCAL-00001" summary="first selenium">
       <option name="closed" value="true" />
@@ -221,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736692394511</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="day 4 merge">
+      <option name="closed" value="true" />
+      <created>1737297262636</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737297262636</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +301,8 @@
     <MESSAGE value="first selenium" />
     <MESSAGE value="first selenium test" />
     <MESSAGE value="first selenium test1" />
-    <option name="LAST_COMMIT_MESSAGE" value="first selenium test1" />
+    <MESSAGE value="day 4 merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 4 merge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
