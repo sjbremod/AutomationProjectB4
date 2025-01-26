@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="903e6055-7fd8-461d-828f-a415aee7c162" name="Changes" comment="day 4 merge">
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day4/T1_findElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day5/T000_staleElementException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day5/T00_checkbox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day5/T0_radioButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day5/T1_testNG_intro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day5/T2_testNG_with_Selenium.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day5/T3_simple_dropdown.java" afterDir="false" />
+    <list default="true" id="903e6055-7fd8-461d-828f-a415aee7c162" name="Changes" comment="testNG intro">
+      <change afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/base/TestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day5/T4_dropdpwn_options.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day5/T5_multi_dropdown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day5/T6_HTML_dropdown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day6/T1_alerts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/day6/T2_iframe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/utilities/ConfigurationReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/loop/test/utilities/DocuportConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/loop/test/utilities/DocuportConstants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +78,24 @@
     "Application.T3_getAttribute_css.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "TestNG.T1_alerts.ConfirmationAlert.executor": "Run",
+    "TestNG.T1_alerts.confirmationAlert.executor": "Run",
+    "TestNG.T1_alerts.executor": "Run",
+    "TestNG.T1_alerts.informationAlert.executor": "Run",
+    "TestNG.T1_alerts.promptAlert.executor": "Run",
     "TestNG.T1_testNG_intro.atest2.executor": "Run",
     "TestNG.T1_testNG_intro.executor": "Run",
     "TestNG.T1_testNG_intro.test1.executor": "Run",
     "TestNG.T1_testNG_intro.test2.executor": "Run",
+    "TestNG.T2_iframe.iframeTest.executor": "Run",
     "TestNG.T2_testNG_with_Selenium.executor": "Run",
     "TestNG.T3_simple_dropdown.executor": "Run",
-    "git-widget-placeholder": "day__5",
+    "TestNG.T4_dropdpwn_options.colarTest.executor": "Run",
+    "TestNG.T4_dropdpwn_options.executor": "Run",
+    "TestNG.T5_multi_dropdown.executor": "Run",
+    "TestNG.T5_multi_dropdown.multiSelect.executor": "Run",
+    "TestNG.T6_HTML_dropdown.executor": "Run",
+    "git-widget-placeholder": "day__6",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/udasc/IdeaProjects/AutomationProjectB4",
     "node.js.detected.package.eslint": "true",
@@ -104,35 +116,54 @@
       <recent name="io.loop.test.utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.T3_simple_dropdown">
-    <configuration name="T1_testNG_intro" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.T2_iframe.nestedFrame">
+    <configuration name="T1_alerts.ConfirmationAlert" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProjectB4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.loop.test.day5.*" />
+          <option name="PATTERN" value="io.loop.test.day6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.loop.test.day5" />
-      <option name="MAIN_CLASS_NAME" value="io.loop.test.day5.T1_testNG_intro" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="io.loop.test.day6" />
+      <option name="MAIN_CLASS_NAME" value="io.loop.test.day6.T1_alerts" />
+      <option name="METHOD_NAME" value="ConfirmationAlert" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T1_testNG_intro.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="T1_alerts.confirmationAlert" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProjectB4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.loop.test.day5.*" />
+          <option name="PATTERN" value="io.loop.test.day6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.loop.test.day5" />
-      <option name="MAIN_CLASS_NAME" value="io.loop.test.day5.T1_testNG_intro" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="io.loop.test.day6" />
+      <option name="MAIN_CLASS_NAME" value="io.loop.test.day6.T1_alerts" />
+      <option name="METHOD_NAME" value="confirmationAlert" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="T1_alerts.promptAlert" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProjectB4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.loop.test.day6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.loop.test.day6" />
+      <option name="MAIN_CLASS_NAME" value="io.loop.test.day6.T1_alerts" />
+      <option name="METHOD_NAME" value="promptAlert" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -158,17 +189,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T1_testNG_intro.test2" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="T2_iframe.iframeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProjectB4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.loop.test.day5.*" />
+          <option name="PATTERN" value="io.loop.test.day6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.loop.test.day5" />
-      <option name="MAIN_CLASS_NAME" value="io.loop.test.day5.T1_testNG_intro" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="PACKAGE_NAME" value="io.loop.test.day6" />
+      <option name="MAIN_CLASS_NAME" value="io.loop.test.day6.T2_iframe" />
+      <option name="METHOD_NAME" value="iframeTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -176,34 +207,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T2_testNG_with_Selenium" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="T2_iframe.nestedFrame" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProjectB4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.loop.test.day5.*" />
+          <option name="PATTERN" value="io.loop.test.day6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="io.loop.test.day5" />
-      <option name="MAIN_CLASS_NAME" value="io.loop.test.day5.T2_testNG_with_Selenium" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="T3_simple_dropdown" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProjectB4" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.loop.test.day5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.loop.test.day5" />
-      <option name="MAIN_CLASS_NAME" value="io.loop.test.day5.T3_simple_dropdown" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="io.loop.test.day6" />
+      <option name="MAIN_CLASS_NAME" value="io.loop.test.day6.T2_iframe" />
+      <option name="METHOD_NAME" value="nestedFrame" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -212,11 +227,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.T3_simple_dropdown" />
-        <item itemvalue="TestNG.T2_testNG_with_Selenium" />
-        <item itemvalue="TestNG.T1_testNG_intro" />
-        <item itemvalue="TestNG.T1_testNG_intro.test2" />
-        <item itemvalue="TestNG.T1_testNG_intro.test2" />
+        <item itemvalue="TestNG.T2_iframe.nestedFrame" />
+        <item itemvalue="TestNG.T2_iframe.iframeTest" />
+        <item itemvalue="TestNG.T1_alerts.promptAlert" />
+        <item itemvalue="TestNG.T1_alerts.confirmationAlert" />
+        <item itemvalue="TestNG.T1_alerts.ConfirmationAlert" />
       </list>
     </recent_temporary>
   </component>
@@ -247,6 +262,8 @@
       <workItem from="1736897684204" duration="12728000" />
       <workItem from="1737204814741" duration="1429000" />
       <workItem from="1737297003257" duration="17347000" />
+      <workItem from="1737770118662" duration="677000" />
+      <workItem from="1737856823185" duration="16424000" />
     </task>
     <task id="LOCAL-00001" summary="first selenium">
       <option name="closed" value="true" />
