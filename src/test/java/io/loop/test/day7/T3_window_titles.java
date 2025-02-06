@@ -1,11 +1,9 @@
-package io.loop.test.day_7;
+package io.loop.test.day7;
 
 import io.loop.test.base.TestBase;
 import io.loop.test.utilities.BrowserUtils;
 import org.openqa.selenium.WindowType;
 import org.testng.annotations.Test;
-
-import java.util.Set;
 
 public class T3_window_titles extends TestBase {
     @Test
