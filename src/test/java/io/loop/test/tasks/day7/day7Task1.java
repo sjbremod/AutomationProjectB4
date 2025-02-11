@@ -1,9 +1,8 @@
-package io.loop.test.tasks;
+package io.loop.test.tasks.day7;
 
 import io.loop.test.base.TestBase;
 import io.loop.test.utilities.DocuportConstants;
 import io.loop.test.utilities.DocuportUtils;
-import io.loop.test.utilities.WebDriverUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
