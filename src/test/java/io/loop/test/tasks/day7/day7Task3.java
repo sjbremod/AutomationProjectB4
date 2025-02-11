@@ -1,14 +1,11 @@
-package io.loop.test.tasks;
+package io.loop.test.tasks.day7;
 
 import io.loop.test.base.TestBase;
 import io.loop.test.utilities.BrowserUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WindowType;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.Set;
 
 public class day7Task3 extends TestBase {
     @Test
